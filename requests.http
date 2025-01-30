@@ -1,0 +1,22 @@
+### Criar Notificação
+POST http://192.168.100.60:3000/createNotificacao
+Content-Type: application/json
+{
+  "usuario_responsavel": "usuario_teste",
+  "dt_ocorrencia": "2023-12-01",
+  "hr_ocorrencia": "14:30",
+  "nomePaciente": "Paciente Teste",
+  "id_evento": 1,
+  "sexo": "Masculino",
+  "raca_cor": "Branco",
+  "idade": 45,
+  "dt_internacao": "2023-11-30",
+  "status": "Pendente",
+  "id_tarefa": 101,
+  "id_setor_notificante": 2,
+  "id_setor_notificado": 3
+}
+
+## Buscar Notificações
+GET http://192.168.100.60:3000/buscaNotificacoes
+Content-Type: application/json
